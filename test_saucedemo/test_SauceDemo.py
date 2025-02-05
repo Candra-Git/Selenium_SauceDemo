@@ -1,11 +1,11 @@
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from faker import Faker
 from test_saucedemo.list_Products import add_to_cart_from_detail, add_to_cart_from_product_list, go_to_cart
 from test_saucedemo.test_users import users
 from test_saucedemo.conftest import take_screenshot
+from selenium.webdriver.support import expected_conditions as EC
 
 
 @pytest.mark.parametrize("user", users, ids=[user["username"] for user in users])
